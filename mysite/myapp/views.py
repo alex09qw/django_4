@@ -46,3 +46,4 @@ def delete_item(request, id):
         return redirect("/myapp/")
     context = {"item": item}
     return render(request, "myapp/deleteitem.html", context)
+
