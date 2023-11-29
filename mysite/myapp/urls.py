@@ -1,5 +1,5 @@
 from django.urls import path
-from myapp.views import index, add_item, update_item, delete_item, ProductListView, ProductDetailView, ProductDeleteView
+from myapp.views import index, add_item, update_item, delete_item, ProductListView, ProductDetailView, ProductDeleteView, PaymentSuccessView,PaymentFailedView
 
 app_name = 'myapp'
 
@@ -10,4 +10,7 @@ urlpatterns = [
     path('additem/', add_item, name='additem'),
     path('updateitem/<int:id>/', update_item, name='update_item'),
     path('deleteitem/<int:pk>/', ProductDeleteView.as_view(), name='delete_item'),
+    path('success/', PaymentSuccessView.as_view(), name='success'),
+    path('failed/', PaymentFailedView.as_view(), name='failed'),
+    path('api/checkout-session/<int:id>/', update_item, name='api_checkout_session'),
 ]

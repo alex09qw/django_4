@@ -132,3 +132,6 @@ MEDIA_URL = '/media/'
 LOGIN_REDIRECT_URL = 'myapp:index'
 LOGIN_URL = 'myapp:login'
 LOGOUT_REDIRECT_URL = 'myapp:index'
+
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51OHm0vFHEjYgTjeIwMTM0XoUFSBjv7Q47HoaJeVrZ5413WhUvuOIiuigC2dmFQnmYiOpjDrxpmiU1jEqq1rXVlkx00AwcFy0iz'
+STRIPE_SECRET_KEY = 'sk_test_51OHm0vFHEjYgTjeIFR9uYhdea1cwgldqqNkzJOE1aISWWernTfIDqpB4Ri5PobFLNhvC29YVzD2ykrVxNT89Xgfs00w9D2cinU'
